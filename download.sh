@@ -8,6 +8,7 @@ URL3="http://ftp.fau.de/centos/7.9.2009/updates/x86_64/Packages/bash-4.2.46-35.e
 echo `dig common-tools-eu-nl.obs.eu-nl.otc.t-systems.com +short`
 echo $URL>>result_summary
 echo `date`>>result_summary
+
 sudo sed -i '/options edns0 trust-ad/d' /etc/resolv.conf
 sudo sed -i '/search openstacklocal/d' /etc/resolv.conf
 sudo sed -i 's/nameserver 127.0.0.53/nameserver 8.8.8.8/g' /etc/resolv.conf
