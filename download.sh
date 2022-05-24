@@ -4,8 +4,8 @@ URL="https://common-tools-eu-nl.obs.eu-nl.otc.t-systems.com/gitlab-runner-openbs
 URL1="https://common-tools.obs.eu-de.otc.t-systems.com/gitlab-runner-openbsd-amd64"
 URL2="http://ftp.fau.de/centos/7.9.2009/updates/x86_6"
 URL3="http://ftp.fau.de/centos/7.9.2009/updates/x86_64/Packages/bash-4.2.46-35.el7_9.x86_64.rpm"
-echo `dig common-tools-eu-nl.obs.eu-nl.otc.t-systems.com +short`
 
+echo `dig common-tools-eu-nl.obs.eu-nl.otc.t-systems.com +short`
 echo $URL>>result_summary
 echo `date`>>result_summary
 sudo sed -i '/options edns0 trust-ad/d' /etc/resolv.conf
