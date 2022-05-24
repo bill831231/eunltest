@@ -1,5 +1,6 @@
 #! /bin/bash
-echo "script started">>result_summary
+echo "script started">>longtermtestresult
+echo `date`>>longtermtestresult
 URL="https://common-tools-eu-nl.obs.eu-nl.otc.t-systems.com/gitlab-runner-openbsd-amd64"
 URL1="https://common-tools.obs.eu-de.otc.t-systems.com/gitlab-runner-openbsd-amd64"
 URL2="http://ftp.fau.de/centos/7.9.2009/updates/x86_6"
@@ -41,4 +42,4 @@ echo "successful requests" >>longtermtestresult
 echo $success >>longtermtestresult
 echo "unsuccessful requests" >>longtermtestresult
 echo $un_success >>longtermtestresult
-
+echo "script finished" >>longtermtestresult
